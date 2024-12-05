@@ -3,6 +3,8 @@
 import javax.swing.*;
 //comando contreto 2
 
+import java.awt.Color;
+
 class TurnOffCommand implements Command {
     private final Device d;
     private JPanel p;
@@ -14,6 +16,7 @@ class TurnOffCommand implements Command {
 
     @Override
     public void execute() {
-        d.turnOff(p);
+        d.turnOff();
+        p.setBackground(Color.BLACK);
     }
 }

@@ -1,5 +1,7 @@
 
 
+import java.awt.Color;
+
 import javax.swing.*;
 //Comando concreto 1
 
@@ -14,6 +16,7 @@ class TurnOnCommand implements Command {
 
     @Override
     public void execute() {
-        d.turnOn(p);
+        d.turnOn();
+        p.setBackground(Color.WHITE);
     }
 }
