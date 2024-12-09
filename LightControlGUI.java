@@ -19,9 +19,8 @@ public class LightControlGUI {
 
         Command lightOn = new TurnOnCommand(light, painel);
         Command lightOff = new TurnOffCommand(light, painel);
-
         RemoteControl controle = new RemoteControl();
-
+        
         JButton onButton = new JButton("Turn on light");
         JButton offButton = new JButton("Turn off light");
 
@@ -32,7 +31,6 @@ public class LightControlGUI {
         offButton.setBackground(Color.DARK_GRAY);
 
         ActionListener listener1 = new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 controle.setCommand(lightOn);
                 controle.getButtonAction();
@@ -42,7 +40,6 @@ public class LightControlGUI {
         onButton.addActionListener(listener1);
 
         ActionListener listener2 = new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 controle.setCommand(lightOff);
                 controle.getButtonAction();

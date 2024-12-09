@@ -1,0 +1,38 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLInterface</id><coordinates><x>472</x><y>328</y><w>64</w><h>80</h></coordinates><panel_attributes>Interface
+Command
+--
++ execute()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>416</x><y>232</y><w>168</w><h>72</h></coordinates><panel_attributes>RemoteControl
+--
+- command : Command
+--
++ setCommand() : void
++ getButtonAction() : void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>496</x><y>296</y><w>24</w><h>56</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>480</y><w>168</w><h>64</h></coordinates><panel_attributes>TurnOnCommand
+--
+- d : Device
+- p : JPanel
+--
++ execute():void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>384</x><y>392</y><w>112</w><h>104</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>120;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>512</x><y>480</y><w>168</w><h>64</h></coordinates><panel_attributes>TurnOnCommand
+--
+- d : Device
+- p : JPanel
+--
++ execute():void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>528</x><y>392</y><w>88</w><h>104</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;90;110</additional_attributes></element><element><id>UMLInterface</id><coordinates><x>184</x><y>472</y><w>64</w><h>96</h></coordinates><panel_attributes>Interface
+Device
+--
++turnOn()
++turnOff()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>408</x><y>600</y><w>104</w><h>72</h></coordinates><panel_attributes>Light
+--
+- ligado:boolean
+--
++ turnOn():void
++ turnOff():void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>248</x><y>544</y><w>176</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;200;70</additional_attributes></element><element><id>Relation</id><coordinates><x>416</x><y>536</y><w>88</w><h>80</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>90;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>504</x><y>536</y><w>88</w><h>80</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;80;90;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>448</x><y>88</y><w>104</w><h>72</h></coordinates><panel_attributes>LightControlGUI
+--
+- ligado:boolean
+--
++ turnOn():void
++ turnOff():void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>496</x><y>152</y><w>24</w><h>96</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element></diagram>
